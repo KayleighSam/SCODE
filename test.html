@@ -6,10 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="sam">SAM</h1>
+    <button button id="myButton">Click Me</button>
     <script>
 
-        document.getElementById("sam")
+        document.getElementById("myButton").addEventListener("click", function(event){
+            event.preventDefault()
+            alert("Button was clicked");
+
+        });
     </script>
 </body>
 </html>

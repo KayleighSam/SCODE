@@ -26,3 +26,37 @@ console.log(upperFruits)
 //add at the first fruits.unshift("pinneaple")
 
 //map uppecase
+//indices of arrays 
+//arrays changing values 
+//checking array length
+//arrays methods - add- .push()
+                //remove from the end - .pop()
+                // add in the beginning - .unshift()
+                //remove from the beginning - .shift()
+                //index of the element - indexOf()
+
+//looping arrays -
+                    //for loop
+                    //for of loop
+                    //forEach method
+
+//Advanced methods -
+                    //map()
+                    //filter()
+                    //find ()
+                    //includes () returns true or false
+                    //sort ()
+
+
+const people = [
+
+
+
+    { name: "Alice", age: 22 },
+    { name: "Sam", age: 30 },
+    { name: "Joy", age: 18 },
+    //st 
+    
+];
+const adult = people.find(person => person.age >= 18);
+console.log(adult)     
