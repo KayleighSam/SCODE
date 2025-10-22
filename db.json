@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "samu"
+    },
+    {
+      "id": "2",
+      "name": "john"
+    },
+    {
+      "id": "3a36",
+      "name": "samuuu"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "radio"
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "name": "rigggy"
+    }
+  ]
+}

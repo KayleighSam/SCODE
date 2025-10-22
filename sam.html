@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users</title>
+</head>
+<body>
+  <div align="center">
+    <h1>Users</h1>
+    <div id="users">
+        
+    </div>
+  </div>
+
+  <script>
+    fetch("http://localhost:3000/users")
+      .then(res => res.json())
+      .then(data => {
+        const usersDiv = document.getElementById("users");
+        data.forEach(user => {
+          usersDiv.innerHTML += `<p>ID: ${user.id} - Name: ${user.name}</p>`;
+        });
+      })
+      .catch(err => console.error("Error:", err));
+  </script>
+</body>
+</html>
+<

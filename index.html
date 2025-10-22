@@ -46,6 +46,30 @@
   <a href="#" id="nav">About</a>
   <a href="#"id="nav">Contact </a>
   <a href="#"id="nav">FAQ</a>
+<div>
+<br clear="all">
+    <button id="btn" onclick="changeName()">CLICK ME </button>
+    <h1 id="print" onmouseover="changeName()", onmouseout="changeName ()">My name is Sam</h1>
+</div>
+<script>
+        function changeName (){
+            const change= document.getElementById("print");
+            change.textContent="my name is John";
+            change.textContent="yawaaahhh";
+            change.style.color="blue";
+            change.style.background="red";
+            change.style.fontSize="34px";
+        }
+        function changeyawah (){
+            const change= document.getElementById("print");
+            change.textContent="my name is John";
+        
+            change.style.color="white";
+            change.style.background="green";
+            change.style.fontSize="34px";
+        }
 
+</script>
 </body>
 </html>
+

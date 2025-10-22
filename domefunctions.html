@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Hello</h1>
+        <p>Welcome to Dom</p>
+        <button onclick="showHeading()">Show heading</button>
+    </div>
+    <div>
+        <h2 id="title">Change my color</h2>
+        <button onclick="ChangeColor()">Change my color</button>
+    </div>
+</body>
+</html>
+<script>
+   function showHeading(){
+    const title=document.getElementsByTagName("h1")[0];
+    change=title.textContent = "samuuu";
+  
+    console.log(title.textContent)
+    alert("HEADING IS" + title.textContent)
+    
+   }
+
+   function ChangeColor(){
+    const title=document.getElementById("title")
+    title.style.color="green"
+   }
+</script>
+<!-- getElementById() -->
+ <!-- getElementsByClassName() -->
+  <!-- getElementsByTagName() -->
+   <!-- querySelector() -->
+    <!-- querySelectorAll() -->
+
+
+    <!-- Changing Styles -->
+    <h1 id="header">My Heading</h1>
+
+    <script>
+      const h1 = document.getElementById("header");
+      h1.style.color = "blue";
+      h1.style.fontSize = "30px";
+    </script>
+    <!-- Changing HTML Content -->
+    document.getElementById("header").innerHTML = "<i>Hello DOM!</i>";
+
+    <!--  Creating and Adding New Elements -->
+    <div id="container"></div>
+
+    <script>
+      const newPara = document.createElement("p");
+      newPara.textContent = "This is a new paragraph!";
+      
+      const container = document.getElementById("container");
+      container.appendChild(newPara); // adds it inside the container
+    </script>
+    <!-- Removing Elements -->
+    container.removeChild(newPara); // removes the new paragraph
+    <!-- Event Listeners (Modern Way) -->
+    <button id="clickMe">Click Me</button>
+
+    <script>
+      document.getElementById("clickMe").addEventListener("click", function () {
+        alert("Button clicked!");
+      });
+    </script>
+    
+    <!-- Step-by-Step: Make a Form & Read Input -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>User Input Form</title>
+    </head>
+    <body>
+    
+      <h2>User Info Form</h2>
+    
+      <form id="userForm">
+        <label for="username">Name:</label>
+        <input type="text" id="username" placeholder="Enter your name" />
+    
+        <br><br>
+    
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" />
+    
+        <br><br>
+    
+        <button type="button" onclick="handleSubmit()">Submit</button>
+      </form>
+    
+      <p id="result"></p>
+    
+      <script>
+        function handleSubmit() {
+          // Get values from input fields
+          const name = document.getElementById("username").value;
+          const age = document.getElementById("age").value;
+    
+          // Display result
+          const resultPara = document.getElementById("result");
+    
+          if (name && age) {
+            resultPara.textContent = `Hello ${name}, you are ${age} years old.`;
+            resultPara.style.color = "green";
+          } else {
+            resultPara.textContent = "Please fill in all fields.";
+            resultPara.style.color = "red";
+          }
+        }
+      </script>
+    
+    </body>
+    </html>
+    
