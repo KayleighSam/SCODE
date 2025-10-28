@@ -2,6 +2,8 @@
 //fruits is an array
 //array functions/methods
 
+const { json } = require("server/reply")
+
 //1.Accessing Array elements
 //console.log(fruits[3])
 
@@ -83,3 +85,80 @@
 // students.sort((a, b) => a.age - b.age)
 
 // console.log(students)
+
+
+//Array of objects with array methods
+
+//students
+const students = [
+    //student1
+    {
+        id: 1,
+        name:"Dan Jonson",
+        age:20,
+        gender: "Male",
+        grade:"9",
+        subjects:["Math","English","Sceience"],
+        averageScore:55, 
+    },
+     //student2
+     {
+        id: 2,
+        name:"Sam Mwaura",
+        age:40,
+        gender: "Male",
+        grade:"7",
+        subjects:["Math","History","Art"],
+        averageScore:72, 
+    },
+      //student3
+    {
+        id: 3,
+        name:"Cynthia Atieno",
+        age:13,
+        gender: "Female",
+        grade:"9",
+        subjects:["Math","English","Sceience"],
+        averageScore:90, 
+    }
+]
+//get all students
+//.map  
+// const names = students.map(student => student.name);
+// console.log(names)
+
+//find a student by name
+//.find
+// const found = students.find(student => student.name === "Sam Mwaura")
+// console.log(found)
+
+//filter
+//.filter
+//filter by average score
+//above 80 avarage score
+// const topStudents = students.filter(student => student.averageScore < 80)
+// console.log(topStudents);
+
+//adding an elements
+//.push
+// //add new students
+// students.push(
+
+//     {
+//         id: 4,
+//         name: "Mathew Wango",
+//         age: 34,
+//         gender: "Male",
+//         grade: "12",
+//         subjects: ["Math", "English", "Sceience"],
+//         averageScore: 30,
+//     }
+
+// );
+// const names = students.map(student => student.name);
+// console.log(names)
+
+//loop forEach
+
+// receive Array in HTMLAllCollection
+// html + js
