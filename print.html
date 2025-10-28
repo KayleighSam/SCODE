@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Student List</h2>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>age</th>
+                    <th>gender</th>
+                    <th>grade</th>
+                    <th>subjects</th>
+                    <th>averageScore</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- //mapp here the students data  -->
+            </tbody>
+
+        </table>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 30px;
+            }
+            h2{
+                text-align: center;
+                color:#333;
+            }
+            table{
+                width:100%;
+                border-collapse: collapse;
+                margin-top:20px;
+            }
+            th,td{
+                border:1px solid #ddd;
+                text-align: left;
+            }
+            th{
+                background-color:#f4a261;
+                color:white;
+            }
+            tr:nth-child(even){
+                background-color:#f9f9f9;
+            }
+            tr:hover{background-color: #f1f1f1;}
+        </style>
+    </div>
+    <script>
+        //Array of objects with array methods
+
+//students
+const students = [
+    //student1
+    {
+        id: 1,
+        name:"Dan Jonson",
+        age:20,
+        gender: "Male",
+        grade:"9",
+        subjects:["Math","English","Sceience"],
+        averageScore:55, 
+    },
+     //student2
+     {
+        id: 2,
+        name:"Sam Mwaura",
+        age:40,
+        gender: "Male",
+        grade:"7",
+        subjects:["Math","History","Art"],
+        averageScore:72, 
+    },
+      //student3
+    {
+        id: 3,
+        name:"Cynthia Atieno",
+        age:13,
+        gender: "Female",
+        grade:"9",
+        subjects:["Math","English","Sceience"],
+        averageScore:90, 
+    }
+]
+const tableBody = document.querySelector("#studentTable tbody");
+
+//loop through students
+
+students.forEach(
+student => {
+//creating a row tr
+const row =document.createElement("tr");
+
+row.innerHTML =`
+
+<td>${student.id}</td>
+<td>${student.name}</td>
+<td>${student.age}</td>
+<td>${student.gender}</td>
+<td>${student.grade}</td>
+<td>${student.subjects}</td>
+<td>${student.averageScore}</td>
+
+
+
+`;
+tableBody.appendChild(row)
+}
+
+);
+    </script>
+  
+</body>
+</html>

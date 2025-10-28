@@ -159,6 +159,15 @@ const students = [
 // console.log(names)
 
 //loop forEach
+//loop through an array 
+//.forEach()
+// students.forEach(
+//     student => { 
+//         console.log(`my name is ${student.name}  i am in grade ${student.grade} i am ${student.age} years old  `)
+//     } 
+// );
 
 // receive Array in HTMLAllCollection
 // html + js
+//
+    
